@@ -1,0 +1,86 @@
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --accent:#2563eb;
+  --muted:#6b7280;
+  --radius:14px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(180deg, #eef2ff 0%, var(--bg) 100%);
+  padding:24px;
+}
+
+.card{
+  width:360px;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:0 10px 30px rgba(16,24,40,0.08);
+  padding:18px;
+  text-align:center;
+}
+
+h1{
+  margin:6px 0 10px;
+  font-size:18px;
+}
+
+.lead{
+  margin:0 0 16px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+#dogImg{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:10px;
+  background:linear-gradient(90deg,#f3f4f6,#ffffff);
+  margin-bottom:12px;
+}
+
+.controls{
+  display:flex;
+  justify-content:center;
+}
+
+button{
+  background:var(--accent);
+  color:white;
+  border:0;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 6px 14px rgba(37,99,235,0.18);
+}
+
+button:disabled{
+  opacity:.6;
+  cursor:wait;
+}
+
+.meta{
+  font-size:13px;
+  color:var(--muted);
+  margin-top:10px;
+}
+
+.error{
+  color:#b91c1c;
+  margin-top:10px;
+  font-size:13px;
+}
+
+footer{
+  font-size:11px;
+  color:#9ca3af;
+  margin-top:12px;
+}

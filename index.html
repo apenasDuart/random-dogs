@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cachorros apenas</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <h1 id="title">Cachorros apenas</h1>
+    <p class="lead">Clique no botão para ver uma foto diferente a cada vez.</p>
+
+    <img id="dogImg" src="" alt="Foto de cachorro aleatório" loading="lazy" />
+
+    <div class="controls">
+      <button id="newDogBtn">Mostrar outro cachorro</button>
+    </div>
+
+    <div class="meta" id="breedText"></div>
+    <div class="error" id="errorText" style="display:none"></div>
+
+    <footer>Fonte das imagens: Dog CEO API</footer>
+  </main>
+
+  <script src="api.js"></script>
+</body>
+</html>
